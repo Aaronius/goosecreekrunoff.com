@@ -4,27 +4,6 @@
 * Version       : 1.0
 ==================================== */
 
-/*==================================
-font-family: 'Poppins', sans-serif;
-==================================== */
-
-
-/*=========== TABLE OF CONTENTS ===========
-1.  General css (Reset code)
-2.  Header
-3.  Welcome-hero
-4.  About me 
-5.  Schedule
-6.  Skill
-7.  Experience
-8.  Profiles
-9.  Portfolio
-10. Clients
-11. Contact
-
-/*-------------------------------------
-		1.General css (Reset code)
---------------------------------------*/
 * {
   padding: 0;
   margin: 0;
@@ -116,11 +95,15 @@ html, body {
   clear: both;
 }
 
+.no-wrap {
+  white-space: nowrap;
+}
+
 /*=============Style css=========*/
 
 
 /*-------------------------------------
-        3.  Welcome-hero
+        Welcome-hero
 --------------------------------------*/
 .welcome-hero {
   display: flex;
@@ -150,10 +133,6 @@ html, body {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.5;
-}
-
-.header-text h2 span {
-  color: #d92cf9;
 }
 
 .header-text p {
@@ -194,7 +173,7 @@ html, body {
 /*.header-text-area*/
 
 /*-------------------------------------
-        4.  About
+        About
 --------------------------------------*/
 .about {
   padding: 50px 0 100px;
@@ -240,6 +219,7 @@ html, body {
 
 /*.single-about-img */
 .single-about-img {
+  display: inline-block;
   position: relative;
   box-shadow: 0 5px 20px rgba(14, 25, 80, .30);
 }
@@ -249,14 +229,9 @@ html, body {
   content: " ";
   top: 0;
   left: 0;
-  width: 109%;
+  width: 100%;
   height: 100%;
-  background: rgba(31, 44, 108, .3);
-}
-
-.single-about-img img {
-  min-width: 500px;
-  height: 468px;
+  background: rgba(31, 44, 108, .1);
 }
 
 .about-list-icon {
@@ -304,7 +279,7 @@ html, body {
 /*.single-about-img */
 
 /*-------------------------------------
-        5.  Schedule
+        Schedule
 --------------------------------------*/
 
 .schedule {
@@ -371,7 +346,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 }
 
 /*-------------------------------------
-        8. Profiles
+        Sponsors
 --------------------------------------*/
 .sponsors {
   padding: 50px 0 100px;
@@ -421,15 +396,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {
   border-bottom: 1px solid #b2c1ce;
 }
 
-@media (max-width: 767px) {
-  .single-sponsor {
-    border: 0;
-  }
-}
-
-
-
-/*========================Thank you=================*/
+/*-------------------------------------
+        Raffle
+--------------------------------------*/
 
 .raffle {
   font-size: 18px;
@@ -446,6 +415,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {
   width: 350px;
   margin: 30px;
 }
+
+/*-------------------------------------
+        Registration
+--------------------------------------*/
 
 .registration {
   padding: 50px 0;
@@ -477,6 +450,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {
   margin-top: 8px;
 }
 
+/*-------------------------------------
+        Results
+--------------------------------------*/
+
 .results {
   background: #f9fbfd;
   padding: 50px 0 100px;
@@ -498,9 +475,13 @@ span.single-timeline-horizontal.spacial-horizontal-line {
   line-height: 42px;
 }
 
+/*-------------------------------------
+        Contact
+--------------------------------------*/
+
 .contact {
   background: #f9fbfd;
-  padding: 50px;
+  padding: 50px 0;
   font-size: 14px;
 }
 
