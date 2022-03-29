@@ -51,7 +51,7 @@ body {
 a, a:hover, a:active, a:focus {
   display: inline-block;
   text-decoration: none;
-  color: #6a708e;
+  color: #9f00ff;
   font-size: 16px;
   padding: 0;
 }
@@ -67,8 +67,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin: 0;
   line-height: 1.8;
-  color: #43485c;
-  font-size: 14px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -167,8 +165,8 @@ html, body {
   letter-spacing: 1px;
 }
 
-.header-text a,
-.registration a {
+.anchor-button,
+.anchor-button {
   width: 200px;
   height: 60px;
   line-height: 60px;
@@ -186,8 +184,8 @@ html, body {
   transition: 0.3s linear;
 }
 
-.header-text a:hover,
-.registration a:hover {
+.anchor-button:hover,
+.anchor-button:hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, .4);
   background: #9f00ff;
   border: 1px solid #9f00ff;
@@ -215,10 +213,12 @@ html, body {
 }
 
 .single-about-txt p {
-  font-size: 16px;
-  color: #8b90a3;
   padding: 35px 0 43px;
   border-bottom: 1px solid #8b90a3;
+}
+
+.single-about-txt p:last-child {
+  border-bottom: none;
 }
 
 .single-about-add-info {
@@ -238,8 +238,6 @@ html, body {
   margin-top: 3px;
 }
 
-/*.single-about-txt*/
-
 /*.single-about-img */
 .single-about-img {
   position: relative;
@@ -257,7 +255,7 @@ html, body {
 }
 
 .single-about-img img {
-  max-width: 500px;
+  min-width: 500px;
   height: 468px;
 }
 
@@ -423,6 +421,12 @@ span.single-timeline-horizontal.spacial-horizontal-line {
   border-bottom: 1px solid #b2c1ce;
 }
 
+@media (max-width: 767px) {
+  .single-sponsor {
+    border: 0;
+  }
+}
+
 
 
 /*========================Thank you=================*/
@@ -435,7 +439,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 }
 
 .raffle .container {
-  width: 800px;
+  max-width: 800px;
 }
 
 .raffle .nordictrack-logo {
@@ -458,10 +462,15 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 }
 
 .registration p,
-.registration li {
-  font-size: 16px;
-  color: #8b90a3;
+.registration .age-groups-list li {
+}
+
+.registration p {
   padding-bottom: 14px;
+}
+
+.registration .age-groups-list {
+  column-width: 120px;
 }
 
 .registration a {
@@ -479,18 +488,20 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 
 .results-content {
   padding-top: 100px;
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
+  column-width: 100px;
 }
 
-.results-content,
 .results-content a {
   font-size: 18px;
+  line-height: 42px;
 }
 
 .contact {
   background: #f9fbfd;
   padding: 50px;
+  font-size: 14px;
 }
 
 .contact address {
