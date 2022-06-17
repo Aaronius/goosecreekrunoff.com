@@ -349,7 +349,12 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 --------------------------------------*/
 .sponsors {
   padding: 50px 0 100px;
-  border: 1px solid #e5ebf2;
+  border-top: 1px solid #e5ebf2;
+  border-bottom: 1px solid #e5ebf2;
+}
+
+.sponsors + .sponsors {
+  border-top: 0;
 }
 
 .sponsors-content {
@@ -358,6 +363,14 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 
 .sponsors-content .col-sm-3 {
   padding: 0;
+}
+
+.sponsors-content .col-sm-3:last-child .single-sponsor {
+  border-right: 0;
+}
+
+.sponsors-content .row:last-child .single-sponsor {
+  border-bottom: 0;
 }
 
 .sponsor-txt {
@@ -373,6 +386,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
   justify-content: center;
   align-items: center;
   border-right: 1px solid #b2c1ce;
+  border-bottom: 1px solid #b2c1ce;
   overflow: hidden;
   -webkit-transition: background 0.5s linear;
   -moz-transition: background 0.5s linear;
@@ -385,14 +399,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {
   text-transform: capitalize;
   color: #636a82;
   font-size: 16px;
-}
-
-.single-sponsor.sponsor-no-border {
-  border-right: transparent;
-}
-
-.sponsor-border {
-  border-bottom: 1px solid #b2c1ce;
+  font-size: 16px;
+  text-align: center;
+  padding: 12px;
 }
 
 /*-------------------------------------
