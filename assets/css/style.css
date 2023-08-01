@@ -349,7 +349,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 --------------------------------------*/
 .sponsors {
   padding: 50px 0 100px;
-  border-top: 1px solid #e5ebf2;
   border-bottom: 1px solid #e5ebf2;
 }
 
@@ -465,6 +464,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 .results {
   background: #f9fbfd;
   padding: 50px 0 100px;
+  border-bottom: 1px solid #e5ebf2;
 }
 
 .results .container {
