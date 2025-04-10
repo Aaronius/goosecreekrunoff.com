@@ -26,7 +26,10 @@ body {
   overflow-x: hidden;
 }
 
-a, a:hover, a:active, a:focus {
+a,
+a:hover,
+a:active,
+a:focus {
   display: inline-block;
   text-decoration: none;
   color: #9f00ff;
@@ -34,7 +37,12 @@ a, a:hover, a:active, a:focus {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   color: #43485c;
   font-size: 16px;
@@ -65,7 +73,10 @@ ul li {
 
 }
 
-select, input, textarea, button {
+select,
+input,
+textarea,
+button {
   box-shadow: none;
   outline: 0 !important;
 }
@@ -75,7 +86,8 @@ button {
   border: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   position: relative;
 }
@@ -352,7 +364,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
   border-bottom: 1px solid #e5ebf2;
 }
 
-.sponsors + .sponsors {
+.sponsors+.sponsors {
   border-top: 0;
 }
 
@@ -409,18 +421,23 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 
 .raffle {
   font-size: 18px;
-  text-align: center;
-  padding: 30px;
+  padding: 50px 0;
+  background: #f9fbfd;
   border-bottom: 1px solid #e5ebf2;
 }
 
 .raffle .container {
   max-width: 800px;
+  padding-top: 50px;
 }
 
 .raffle .nordictrack-logo {
   width: 350px;
   margin: 30px;
+}
+
+.raffle p {
+  padding-bottom: 14px;
 }
 
 /*-------------------------------------
@@ -442,8 +459,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 }
 
 .registration p,
-.registration .age-groups-list li {
-}
+.registration .age-groups-list li {}
 
 .registration p {
   padding-bottom: 14px;
